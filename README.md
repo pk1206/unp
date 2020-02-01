@@ -13,6 +13,8 @@ UNIX网络编程笔记
 
 [第05章 TCP客户/服务器程序示例][ref_ch05]
 
+[排版错误记录][ref_layout_err]
+
 [ref_ch01]: volume1/01/notes.md "第01章"
 [ref_ch02]: volume1/02/notes.md "第02章"
 [ref_ch03]: volume1/03/notes.md "第03章"
@@ -39,3 +41,9 @@ UNIX网络编程笔记
 [ref_ch24]: volume1/24/notes.md "第24章"
 [ref_ch25]: volume1/25/notes.md "第25章"
 [ref_ch26]: volume1/26/notes.md "第26章"
+[ref_ch27]: volume1/27/notes.md "第27章"
+[ref_ch28]: volume1/28/notes.md "第28章"
+[ref_ch29]: volume1/29/notes.md "第29章"
+[ref_ch30]: volume1/30/notes.md "第30章"
+[ref_ch31]: volume1/31/notes.md "第31章"
+[ref_layout_err]: volume1/layout_err.md "排版错误记录"
