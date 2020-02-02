@@ -3,8 +3,8 @@
 </h1>
 
 [本章结构体表](struct.md "包含本章所介绍结构体的详细说明")
-[返回上一级](notes.md "第04章笔记")
-[返回章节目录](../volume1.md "章节目录")
+[本章笔记](notes.md "第04章笔记")
+[章节目录](../volume1.md "章节目录")
 
 ---
 
@@ -1272,5 +1272,5 @@ ssize_t readline(int fd, void *vptr, size_t maxlen)
 ---
 
 [本章结构体表](struct.md "包含本章所介绍结构体的详细说明")
-[返回上一级](notes.md "第04章笔记")
-[返回章节目录](../volume1.md "章节目录")
+[本章笔记](notes.md "第04章笔记")
+[章节目录](../volume1.md "章节目录")
