@@ -1,6 +1,12 @@
-# 第03章函数表
+<h1 id=file_func>
+    第03章函数表
+</h1>
 
-[ref_top]: 第03章函数表 "回顶部"
+[本章结构体表](struct.md "包含本章所介绍结构体的详细说明")
+[返回上一级](notes.md "第04章笔记")
+[返回章节目录](../volume1.md "章节目录")
+
+---
 
 <table>
     <tr>
@@ -354,7 +360,8 @@
     sockaddr_in addr = {0};
     addr.sin_port = htons(21);
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_htonl>uint32_t htonl(uint32_t host32bitvalue);</h3>
 
@@ -369,7 +376,8 @@
 示例代码：
     略
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_ntohs>uint16_t ntohs(uint16_t net16bitvalue);</h3>
 
@@ -383,7 +391,8 @@
 示例代码：
     略
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_ntohl>uint32_t ntohl(uint32_t net32bitvalue);</h3>
 
@@ -398,7 +407,8 @@
 示例代码：
     略
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h2 id=byte_function>字节操纵函数</h2>
 
@@ -415,7 +425,8 @@
     char str[10];
     bzero(str, 10);
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_bcopy>void bcopy(const void *src, void *dest, size_t nbytes);</h3>
 
@@ -434,7 +445,8 @@
     bcopy(src, dest, 4);
     printf("dest = %s\n", dest); /* 输出 test */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_bcmp>int bcmp(const void *ptr1, const void *ptr2, size_t nbytes);</h3>
 
@@ -456,7 +468,8 @@
     ret = bcmp(str1, str2, 5);
     printf("ret2 = %d\n", ret); /* 输出非 0 */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_memset>void *memset(void *dest, int c, size_t len);</h3>
 
@@ -474,7 +487,8 @@
     memset((void*)name, 0, 5);
     printf("name = %s\n", name); /* 输出 "name = " */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_memcpy>void *memcpy(void *dest, const void *src, size_t nbytes);</h3>
 
@@ -496,7 +510,8 @@
     memcpy(dest, src, 10);
     printf("dest = %s\n", dest); /* 输出 "dest = test str" */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_memcmp>int memcmp(const void *ptr1, const void *ptr2, size_t nbytes);</h3>
 
@@ -514,7 +529,8 @@
     printf("ret = %d\n", memcmp(str1, str2, 4)); /* 返回值 =0 */
     printf("ret = %d\n", memcmp(str1, str2, 5)); /* 返回值 <0 */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h2 id=addr_transf_function>地址转换函数</h2>
 
@@ -537,7 +553,8 @@
     inet_aton("192.168.3.100", &addr);
     printf("s_addr = %#x\n", addr.s_addr); /* 输出 "s_addr=0x6403a8c0" */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_inet_addr>
     <del>
@@ -558,7 +575,8 @@
     addr.s_addr = inet_addr("192.168.3.100");
     printf("s_addr = %#x\n", addr.s_addr); /* 输出 "s_addr=0x6403a8c0" */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_inet_ntoa>
     char *inet_ntoa(
@@ -582,7 +600,8 @@
     inet_ntoa(addr);            /* 没有对指针 ip 重新赋值 */
     printf("ip = %s\n", ip);    /* 输出 "ip = 192.168.100.1" */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_inet_pton>int inet_pton(int family, const char *strptr, void *addrptr);</h3>
 
@@ -610,7 +629,8 @@
         printf("%02x", addr6.s6_addr[i]);
     printf("\n");  /* 输出 "s6_addr = 0xfe800000000000004d8d78de0fd90b98" */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_inet_ntop>const char *inet_ntop(int family, const void *addrptr, char *strptr, size_t len);</h3>
 
@@ -641,7 +661,8 @@
     inet_ntop(AF_INET6, (void*)&addr6, ip_addr6, INET6_ADDRSTRLEN);
     printf("ip_addr6 = %s\n", ip_addr6); /* 输出 "ip_addr6 = fe80::4d8d:78de:fd9:b98" */
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_sock_ntop>
     char *sock_ntop (const
@@ -727,7 +748,8 @@ char *sock_ntop(const struct sockaddr *sa, socklen_t salen)
     return (NULL);
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_sock_bind_wild>
     int sock_bind_wild (int sockfd, int family);
@@ -783,7 +805,8 @@ int sock_bind_wild(int sockfd, int family)
 }
 
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_sock_cmp_addr>
     int sock_cmp_addr (const
@@ -843,7 +866,8 @@ int sock_cmp_addr(const struct sockaddr *sa1, const struct sockaddr *sa2,
     return (-1);
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_sock_cmp_port>
     int sock_cmp_port(const
@@ -889,7 +913,8 @@ int sock_cmp_port(const struct sockaddr *sa1, const struct sockaddr *sa2,
     return (-1);
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_sock_get_port>
     int sock_get_port(const
@@ -930,7 +955,8 @@ sock_get_port(const struct sockaddr *sa, socklen_t salen)
     return(-1);     /* ??? */
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_sock_ntop_host>
     char * sock_ntop_host(const
@@ -1006,7 +1032,7 @@ char *sock_ntop_host(const struct sockaddr *sa, socklen_t salen)
     return (NULL);
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_sock_set_addr>
     void sock_set_addr(const 
@@ -1047,7 +1073,7 @@ void sock_set_addr(struct sockaddr *sa, socklen_t salen, const void *addr)
     return;
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_sock_set_port>
     void sock_set_port(const
@@ -1087,7 +1113,7 @@ void sock_set_port(struct sockaddr *sa, socklen_t salen, int port)
     return;
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_sock_set_wild>
     void sock_set_wild(
@@ -1130,7 +1156,7 @@ void sock_set_wild(struct sockaddr *sa, socklen_t salen)
     return;
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_readn>
     <abbr title="带符号的size_t">ssize_t</abbr>
@@ -1168,7 +1194,7 @@ ssize_t readn(int fd, void *vptr, size_t n)
     return(n - nleft);      /* return >= 0 */
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_writen>
     <abbr title="带符号的size_t">ssize_t</abbr>
@@ -1205,7 +1231,7 @@ ssize_t writen(int fd, const void *vptr, size_t n)
     return(n);
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+[回顶部](#file_func "回顶部")
 
 <h3 id=func_readline>
     <abbr title="带符号的size_t">ssize_t</abbr>
@@ -1241,4 +1267,10 @@ ssize_t readline(int fd, void *vptr, size_t maxlen)
     return(n);
 }
 ```
-[回顶部](#第03章函数表 "回顶部")
+[回顶部](#file_func "回顶部")
+
+---
+
+[本章结构体表](struct.md "包含本章所介绍结构体的详细说明")
+[返回上一级](notes.md "第04章笔记")
+[返回章节目录](../volume1.md "章节目录")

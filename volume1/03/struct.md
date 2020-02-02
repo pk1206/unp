@@ -1,4 +1,12 @@
-<h1 id=sockaddr>第03章结构体<h1>
+<h1 id=file_struct>
+    第03章结构体
+</h1>
+
+[本章函数表](func.md "包含本章所介绍函数的详细说明")
+[返回上一级](notes.md "第03章笔记")
+[返回章节目录](../volume1.md "章节目录")
+
+---
 
 <h3 id=ipv4_sockaddr_struct>IPv4套接字地址结构</h3>
 
@@ -75,3 +83,7 @@ struct sockaddr_storage {
      */
 }
 ```
+
+[本章函数表](func.md "包含本章所介绍函数的详细说明")
+[返回上一级](notes.md "第03章笔记")
+[返回章节目录](../volume1.md "章节目录")

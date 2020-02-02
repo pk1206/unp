@@ -1,4 +1,12 @@
-# 第03章
+<h1 id=file_notes>
+    第03章 套接字编程简介
+</h1>
+
+[本章函数表](func.md "包含本章所介绍函数的详细说明")
+[本章结构体表](struct.md "包含本章所介绍结构体的详细说明")
+[返回章节目录](../volume1.md "章节目录")
+
+---
 
 
 <h2 id=sockaddr_struct>套接字地址结构</h2>
@@ -20,4 +28,10 @@
 <h2 id=new_addr_transf_function>inet_pton和inet_ntop函数</h2>
 
 [详细说明见此。](func.md#addr_transf_function)
+
+---
+
+[本章函数表](func.md "包含本章所介绍函数的详细说明")
+[本章结构体表](struct.md "包含本章所介绍结构体的详细说明")
+[返回章节目录](../volume1.md "章节目录")
 
